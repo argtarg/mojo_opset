@@ -1,0 +1,11 @@
+{
+  "final_commit": "3e988f6295b371313f7351daae2b160fceb40611",
+  "files": {
+    "mojo_opset/functions/kv_cache.py": "81ceb7afca858e6468a0c856d0398876ac9f2ce3f814a93d752ea89b1ad2c016",
+    "mojo_opset/kernels/npu_a2_triton/kpool_seed_tail_cache.py": "f8919c6b96e87534f0267b5e0c7cc25a645d65f6d7bfec341a88ac8b3faf9665",
+    "mojo_opset/kernels/npu_a5_triton/kpool_seed_tail_cache.py": "693686d107dc0a43b4eb22237c23192d87525251f81a149382af76986f668432",
+    "tests/functions/test_kpool_seed_tail_cache.py": "afe76ea340798c154765b68207980110ea1321c4d512a75c19979110910e6855"
+  },
+  "a2_jit_ast_unchanged": true,
+  "a5_jit_ast_unchanged": true
+}
