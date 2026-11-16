@@ -1,0 +1,121 @@
+{
+  "passed_cases": 12,
+  "total_samples": 480,
+  "physical_card": 7,
+  "only_device_pid_in_accepted_snapshots": [
+    "2301630"
+  ],
+  "explicit_l2_eviction": false,
+  "source_manifest_matches_pr": true,
+  "per_case": [
+    {
+      "case": "case02-length-1",
+      "accepted_attempt": 1,
+      "snapshots": [
+        "case02-length-1_attempt1_before.txt",
+        "case02-length-1_attempt1_after.txt"
+      ],
+      "samples": 40
+    },
+    {
+      "case": "case05-length-4",
+      "accepted_attempt": 1,
+      "snapshots": [
+        "case05-length-4_attempt1_before.txt",
+        "case05-length-4_attempt1_after.txt"
+      ],
+      "samples": 40
+    },
+    {
+      "case": "case06-length-5",
+      "accepted_attempt": 1,
+      "snapshots": [
+        "case06-length-5_attempt1_before.txt",
+        "case06-length-5_attempt1_after.txt"
+      ],
+      "samples": 40
+    },
+    {
+      "case": "case10-length-9",
+      "accepted_attempt": 1,
+      "snapshots": [
+        "case10-length-9_attempt1_before.txt",
+        "case10-length-9_attempt1_after.txt"
+      ],
+      "samples": 40
+    },
+    {
+      "case": "case13-length-33",
+      "accepted_attempt": 1,
+      "snapshots": [
+        "case13-length-33_attempt1_before.txt",
+        "case13-length-33_attempt1_after.txt"
+      ],
+      "samples": 40
+    },
+    {
+      "case": "case16-length-129",
+      "accepted_attempt": 1,
+      "snapshots": [
+        "case16-length-129_attempt1_before.txt",
+        "case16-length-129_attempt1_after.txt"
+      ],
+      "samples": 40
+    },
+    {
+      "case": "case17-mixed-requests",
+      "accepted_attempt": 1,
+      "snapshots": [
+        "case17-mixed-requests_attempt1_before.txt",
+        "case17-mixed-requests_attempt1_after.txt"
+      ],
+      "samples": 40
+    },
+    {
+      "case": "case19-padded-cache",
+      "accepted_attempt": 0,
+      "snapshots": [
+        "case19-padded-cache_attempt0_before.txt",
+        "case19-padded-cache_attempt0_after.txt"
+      ],
+      "samples": 40
+    },
+    {
+      "case": "case21-batch-32",
+      "accepted_attempt": 0,
+      "snapshots": [
+        "case21-batch-32_attempt0_before.txt",
+        "case21-batch-32_attempt0_after.txt"
+      ],
+      "samples": 40
+    },
+    {
+      "case": "case22-prefill-128x128",
+      "accepted_attempt": 0,
+      "snapshots": [
+        "case22-prefill-128x128_attempt0_before.txt",
+        "case22-prefill-128x128_attempt0_after.txt"
+      ],
+      "samples": 40
+    },
+    {
+      "case": "case31-prefill-1x16384",
+      "accepted_attempt": 0,
+      "snapshots": [
+        "case31-prefill-1x16384_attempt0_before.txt",
+        "case31-prefill-1x16384_attempt0_after.txt"
+      ],
+      "samples": 40
+    },
+    {
+      "case": "case32-prefill-1024",
+      "accepted_attempt": 0,
+      "snapshots": [
+        "case32-prefill-1024_attempt0_before.txt",
+        "case32-prefill-1024_attempt0_after.txt"
+      ],
+      "samples": 40
+    }
+  ],
+  "runner_sha256": "9bfff83586f3c8d07ab21e3e8ee5de93d2a5d8f832adec64dbb588c52670bef2"
+}
