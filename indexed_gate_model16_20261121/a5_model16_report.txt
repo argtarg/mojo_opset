@@ -1,0 +1,75 @@
+A5 model16 direct table-stride round (2026-11-21 Asia/Shanghai)
+Host179.228.2.2 Ascend950PR_957c physical6/logical0; original old PR machine.
+Parent source SHA256: 9b492cc42f556819c67e8e5087988b3574375ce79c9dcaea644bf125418f0c95
+Candidate source SHA256: cb970f0caf9ca43f2e49e2e10ab09461e7385d13c1018cfe13b77ce7e47df051
+Change: main fusion loads gate/shift/scale using their original row strides. All16 cases have column stride1,row stride6H. Other5 specialized kernels retain original contiguous behavior.
+Precision: official npu_compare standalone streaming16/16; typical4/4. No PT output archives generated after resumption.
+No-PMU matched protocol: same2 input tensors and actual public APIs,2 preconditions,AB/BA + alternating warm/cold,3 retained rounds;20pairs per round,512-row case80pairs.
+Device metric: sum all actual work-kernel Durations per public call. Parent3 copies+1fusion, candidate1fusion. Eviction,allocation/host launch gaps excluded.
+Warm no explicit eviction; cold independent1GiB FP32 read+1/write, synchronize before public call. Flush is not proof ofzero L2hits.
+Full16 geomean parent/candidate: {"warm": 1.0682119623181372, "cold": 1.0463576704441366}
+Copy calibration: {"warm": {"before_GBps": 1215.177554778188, "after_GBps": 1213.5994520535558, "reference_GBps": 1214.388503415872, "drift_pct": 0.1298660198608137}, "cold": {"before_GBps": 1175.4100956317652, "after_GBps": 1175.3148871798576, "reference_GBps": 1175.3624914058114, "drift_pct": 0.008100019921686297}}
+Interference: [{"phase": "noise", "periodic_samples": 25, "process_snapshot_count": 13, "foreign_pids_observed": [], "periodic_errors": 0, "discarded_rounds": 0}, {"phase": "typical", "periodic_samples": 47, "process_snapshot_count": 25, "foreign_pids_observed": [], "periodic_errors": 0, "discarded_rounds": 0}, {"phase": "confirm", "periodic_samples": 46, "process_snapshot_count": 25, "foreign_pids_observed": [], "periodic_errors": 0, "discarded_rounds": 0}, {"phase": "full", "periodic_samples": 165, "process_snapshot_count": 97, "foreign_pids_observed": [], "periodic_errors": 0, "discarded_rounds": 0}, {"phase": "pmu", "periodic_samples": 122, "process_snapshot_count": 36, "foreign_pids_observed": [], "periodic_errors": 0, "discarded_rounds": 0}]
+Full16 pre/post bandwidth controls: {"count": 96, "min_GBps": 1171.6450720423989, "max_GBps": 1177.7901625390223, "max_reference_deviation_pct": 0.32031574370158244}
+Validated flush-before-work pairs: 6936
+PMU: fresh same-source parent/candidate;6targets per cache/variant/case. AIV-weighted Vector/Scalar/MTE2/MTE3 activities overlap; no wall-time/MBU/critical-path interpretation. Per-kernel times, weights and counts are in summary JSON.
+Measurement repair: official scheduled trace has20 actual compute kernels but17 unique Step IDs for candidate largest shape, causing20/17 inflation. Private runner validates complete chronological calls and actual work counts before dividing; shared tools/DUT unchanged. Raw traces and uncorrected artifacts retained.
+PMU raw ratios have3 decimal rounding. Diagnostic unit-check tolerance follows existing validated0.003 rule; displayed activities remain from raw times/AIV times.
+Official benchmark (warm typical4): repaired total-op comparison follows; both kernel/total-op logs retained.
+Perf comparison:
+latency-model_ref2va_img_audio_mid_u1: baseline=total-op=397.03455, compare=total-op=385.31075, delta=-2.95%
+latency-model_t2va_recipe209_u1: baseline=total-op=2262.609, compare=total-op=2259.5757, delta=-0.13%
+latency-model_t2va_smoke_mid_u8_rank0: baseline=total-op=25.1051, compare=total-op=15.2029, delta=-39.44%
+latency-model_t2va_smoke_step0_u1: baseline=total-op=151.31505, compare=total-op=141.92735, delta=-6.20%
+Avg improvement: +12.2%
+Geomean speedup: 1.16x
+Best case speedup: 1.65x
+Worst case speedup: 1.00x
+Regressed cases: 0
+Review disposition: uniform-keep
+Bottom case: latency-model_t2va_recipe209_u1 speedup=1.00x, baseline=2262.61
+Bottom case: latency-model_ref2va_img_audio_mid_u1 speedup=1.03x, baseline=397.035
+Bottom case: latency-model_t2va_smoke_step0_u1 speedup=1.07x, baseline=151.315
+Metric source: total-op
+PASS: compared 4 latency entries
+
+L20 reference-only geomean: {"warm": 1.704902310945695, "cold": 1.1203405908921187}
+User supplied7-file L20 autotuned result, INTERFERENCE_UNVERIFIED;1 input vs A5 two, differing eviction implementation/preconditioning; reference only, not matched fresh L20 acceptance
+Original13 accepted results remain bound to parent round9; not remeasured/promoted for the modified source in this model16-only round.
+Largest63360-row full-run gain is tiny (~noise scale); do not claim a substantial stable single-case speedup there.
+
+case (model_ omitted) | rows | warm parent us | warm candidate us | warm parent/candidate | cold parent us | cold candidate us | cold parent/candidate
+t2va_smoke_step0_u1 | 4096 | 150.649000 | 143.353000 | 1.050895 | 216.208000 | 208.208000 | 1.038423
+t2va_smoke_mid_u1 | 4096 | 154.215500 | 143.070500 | 1.077899 | 220.921500 | 209.094500 | 1.056563
+t2va_smoke_mid_u8_rank0 | 512 | 24.932500 | 14.988500 | 1.663442 | 43.420500 | 32.222500 | 1.347521
+t2va_doc209_u1 | 16448 | 606.207000 | 596.087000 | 1.016977 | 664.521500 | 653.672500 | 1.016597
+t2va_doc209_u4_rank0 | 4112 | 154.786000 | 143.705000 | 1.077109 | 221.499500 | 210.407500 | 1.052717
+t2va_doc209_u4_rank3 | 4112 | 155.251500 | 143.540000 | 1.081590 | 222.323500 | 210.408000 | 1.056630
+t2va_recipe209_u1 | 63360 | 2261.216000 | 2260.136500 | 1.000478 | 2318.596500 | 2314.973000 | 1.001565
+t2va_recipe209_u4_rank0 | 15840 | 584.218000 | 573.666000 | 1.018394 | 641.464500 | 631.071000 | 1.016470
+fl2va_first_step0_u4 | 15056 | 555.494000 | 544.999000 | 1.019257 | 612.515000 | 602.720500 | 1.016250
+fl2va_first_mid_u4 | 15056 | 555.102000 | 545.475000 | 1.017649 | 612.531500 | 601.823000 | 1.017793
+fl2va_firstlast124_u4 | 10192 | 380.287500 | 369.831000 | 1.028274 | 438.538000 | 427.889000 | 1.024887
+t2va_default_limit_u4_rank3 | 27312 | 992.802000 | 978.880500 | 1.014222 | 1049.575500 | 1035.572500 | 1.013522
+ref2va_img_audio_step0_u1 | 10688 | 398.751500 | 388.785000 | 1.025635 | 455.631000 | 445.727000 | 1.022220
+ref2va_img_audio_mid_u1 | 10688 | 398.679500 | 387.404500 | 1.029104 | 456.044000 | 444.913000 | 1.025018
+batch2_same_step_u4_rank0 | 5136 | 197.378500 | 187.427500 | 1.053093 | 257.719500 | 248.235000 | 1.038208
+batch2_mixed_step_u4_rank3 | 5136 | 197.826500 | 188.239000 | 1.050933 | 259.475500 | 249.980500 | 1.037983
+
+Candidate full pipeline V/S/MTE2/MTE3 percentages; each cell warm/cold:
+t2va_smoke_step0_u1 | 37.69/26.12 | 10.15/7.02 | 70.31/73.69 | 19.41/38.31
+t2va_smoke_mid_u1 | 37.87/26.21 | 10.19/7.17 | 70.33/75.74 | 18.96/31.07
+t2va_smoke_mid_u8_rank0 | 51.36/23.54 | 22.17/12.09 | 55.80/83.54 | 14.01/48.98
+t2va_doc209_u1 | 35.69/32.58 | 8.73/8.00 | 73.26/74.29 | 19.04/23.21
+t2va_doc209_u4_rank0 | 37.99/26.25 | 10.22/7.01 | 70.17/75.16 | 18.63/32.32
+t2va_doc209_u4_rank3 | 37.91/26.19 | 10.23/7.12 | 70.39/75.60 | 18.68/31.98
+t2va_recipe209_u1 | 35.84/34.95 | 8.54/8.33 | 73.05/73.16 | 23.08/24.65
+t2va_recipe209_u4_rank0 | 35.60/32.45 | 8.70/7.96 | 73.35/74.25 | 18.75/22.76
+fl2va_first_step0_u4 | 35.55/32.28 | 8.69/7.90 | 73.32/74.62 | 18.10/21.84
+fl2va_first_mid_u4 | 35.58/32.32 | 8.70/7.94 | 73.17/73.18 | 19.72/25.11
+fl2va_firstlast124_u4 | 35.61/30.96 | 8.82/7.65 | 73.33/74.63 | 18.91/25.54
+t2va_default_limit_u4_rank3 | 35.88/33.90 | 8.66/8.19 | 72.78/72.79 | 24.48/28.38
+ref2va_img_audio_step0_u1 | 35.56/31.06 | 8.83/7.70 | 73.25/74.87 | 20.28/26.85
+ref2va_img_audio_mid_u1 | 35.57/31.03 | 8.84/7.72 | 73.09/74.47 | 21.36/27.70
+batch2_same_step_u4_rank0 | 36.05/27.45 | 9.46/7.16 | 71.87/73.82 | 20.32/35.21
+batch2_mixed_step_u4_rank3 | 35.99/27.45 | 9.55/7.20 | 71.87/74.71 | 17.91/25.57

@@ -1,0 +1,212 @@
+{
+  "scope": "new16 model-rule-derived cases only; original13 remain separate",
+  "source_sha256": "bfbf04aef961984bc0050be36e9bd0e58fdef703a2bbbd276c76eaa811434c20",
+  "correctness_passed": 16,
+  "total_cases": 16,
+  "operator_modified": false,
+  "clear_l2": true,
+  "flush_mib": 1024,
+  "timing_source": "same-run torch_npu.profiler kernel_details.csv, AiCoreNone",
+  "timing_boundary": "sum of all four work kernels in public forward, including3 contiguous-table copies; eviction excluded",
+  "semantic_byte_formula": "8*R*H + 6*A*H + 2*H + 8*R; A = number of condition rows actually indexed",
+  "byte_policy": "necessary semantic bytes; extra internal contiguous copies are excluded from numerator, included in measured duration",
+  "reference_gbps": 1185.6450816886695,
+  "total_ideal_bytes": 9114262016,
+  "total_device_us": 11010.439,
+  "aggregate_mbu_pct": 69.8171586276454,
+  "arithmetic_mean_mbu_pct": 65.62824212880744,
+  "target_mbu_pct": 60,
+  "target_reached": true,
+  "below_60_cases": [
+    "model_t2va_smoke_mid_u8_rank0"
+  ],
+  "data_reuse": "Same cold measurement and matched copy-control session as the immediately preceding16-case test; no fresh device run",
+  "caveat": "Semantic effective bandwidth relative to measured copy reference; not measured HBM traffic or PMU pipe utilization",
+  "environment": {
+    "physical_device": 7,
+    "logical_device": 0,
+    "device": "Ascend910B3",
+    "torch": "2.7.1+cpu",
+    "torch_npu": "2.7.1.post11.dev20261022",
+    "triton": "3.6.0",
+    "cann_home": "/home/tangbiao/.local/Ascend/cann-9.3.0"
+  },
+  "cases": [
+    {
+      "case_id": "model_t2va_smoke_step0_u1",
+      "rows": 4096,
+      "hidden_size": 5376,
+      "conditions": 3,
+      "active_conditions": 3,
+      "ideal_bytes": 176301056,
+      "device_total_us": 239.4445,
+      "effective_gbps": 736.2919423916607,
+      "mbu_pct": 62.10053529197691
+    },
+    {
+      "case_id": "model_t2va_smoke_mid_u1",
+      "rows": 4096,
+      "hidden_size": 5376,
+      "conditions": 6,
+      "active_conditions": 3,
+      "ideal_bytes": 176301056,
+      "device_total_us": 239.665,
+      "effective_gbps": 735.6145286128555,
+      "mbu_pct": 62.04340067477423
+    },
+    {
+      "case_id": "model_t2va_smoke_mid_u8_rank0",
+      "rows": 512,
+      "hidden_size": 5376,
+      "conditions": 6,
+      "active_conditions": 3,
+      "ideal_bytes": 22131712,
+      "device_total_us": 40.521,
+      "effective_gbps": 546.1788208583204,
+      "mbu_pct": 46.06596268087399
+    },
+    {
+      "case_id": "model_t2va_doc209_u1",
+      "rows": 16448,
+      "hidden_size": 5376,
+      "conditions": 6,
+      "active_conditions": 3,
+      "ideal_bytes": 707634688,
+      "device_total_us": 841.027,
+      "effective_gbps": 841.393543845798,
+      "mbu_pct": 70.96504315165151
+    },
+    {
+      "case_id": "model_t2va_doc209_u4_rank0",
+      "rows": 4112,
+      "hidden_size": 5376,
+      "conditions": 6,
+      "active_conditions": 3,
+      "ideal_bytes": 176989312,
+      "device_total_us": 240.445,
+      "effective_gbps": 736.0906319532534,
+      "mbu_pct": 62.08355631222012
+    },
+    {
+      "case_id": "model_t2va_doc209_u4_rank3",
+      "rows": 4112,
+      "hidden_size": 5376,
+      "conditions": 6,
+      "active_conditions": 1,
+      "ideal_bytes": 176924800,
+      "device_total_us": 240.204,
+      "effective_gbps": 736.5605901650264,
+      "mbu_pct": 62.12319365555592
+    },
+    {
+      "case_id": "model_t2va_recipe209_u1",
+      "rows": 63360,
+      "hidden_size": 5376,
+      "conditions": 6,
+      "active_conditions": 3,
+      "ideal_bytes": 2725601280,
+      "device_total_us": 3127.2425,
+      "effective_gbps": 871.5669731400748,
+      "mbu_pct": 73.50993873299207
+    },
+    {
+      "case_id": "model_t2va_recipe209_u4_rank0",
+      "rows": 15840,
+      "hidden_size": 5376,
+      "conditions": 6,
+      "active_conditions": 3,
+      "ideal_bytes": 681480960,
+      "device_total_us": 807.796,
+      "effective_gbps": 843.630025402453,
+      "mbu_pct": 71.15367308747257
+    },
+    {
+      "case_id": "model_fl2va_first_step0_u4",
+      "rows": 15056,
+      "hidden_size": 5376,
+      "conditions": 6,
+      "active_conditions": 4,
+      "ideal_bytes": 647788672,
+      "device_total_us": 800.476,
+      "effective_gbps": 809.2543336714655,
+      "mbu_pct": 68.25434914459184
+    },
+    {
+      "case_id": "model_fl2va_first_mid_u4",
+      "rows": 15056,
+      "hidden_size": 5376,
+      "conditions": 9,
+      "active_conditions": 4,
+      "ideal_bytes": 647788672,
+      "device_total_us": 786.7059999999999,
+      "effective_gbps": 823.4190053209205,
+      "mbu_pct": 69.44902973393657
+    },
+    {
+      "case_id": "model_fl2va_firstlast124_u4",
+      "rows": 10192,
+      "hidden_size": 5376,
+      "conditions": 9,
+      "active_conditions": 4,
+      "ideal_bytes": 438558848,
+      "device_total_us": 545.5805,
+      "effective_gbps": 803.838934859292,
+      "mbu_pct": 67.79760210487396
+    },
+    {
+      "case_id": "model_t2va_default_limit_u4_rank3",
+      "rows": 27312,
+      "hidden_size": 5376,
+      "conditions": 6,
+      "active_conditions": 1,
+      "ideal_bytes": 1174896000,
+      "device_total_us": 1378.4575,
+      "effective_gbps": 852.3266041934554,
+      "mbu_pct": 71.88716230151428
+    },
+    {
+      "case_id": "model_ref2va_img_audio_step0_u1",
+      "rows": 10688,
+      "hidden_size": 5376,
+      "conditions": 9,
+      "active_conditions": 5,
+      "ideal_bytes": 459927040,
+      "device_total_us": 561.321,
+      "effective_gbps": 819.3654611176136,
+      "mbu_pct": 69.1071446060926
+    },
+    {
+      "case_id": "model_ref2va_img_audio_mid_u1",
+      "rows": 10688,
+      "hidden_size": 5376,
+      "conditions": 12,
+      "active_conditions": 5,
+      "ideal_bytes": 459927040,
+      "device_total_us": 563.481,
+      "effective_gbps": 816.2245754515236,
+      "mbu_pct": 68.84223517285677
+    },
+    {
+      "case_id": "model_batch2_same_step_u4_rank0",
+      "rows": 5136,
+      "hidden_size": 5376,
+      "conditions": 6,
+      "active_conditions": 3,
+      "ideal_bytes": 221037696,
+      "device_total_us": 298.166,
+      "effective_gbps": 741.3242824466909,
+      "mbu_pct": 62.524974285799814
+    },
+    {
+      "case_id": "model_batch2_mixed_step_u4_rank3",
+      "rows": 5136,
+      "hidden_size": 5376,
+      "conditions": 9,
+      "active_conditions": 1,
+      "ideal_bytes": 220973184,
+      "device_total_us": 299.90600000000006,
+      "effective_gbps": 736.8081465525863,
+      "mbu_pct": 62.14407312373601
+    }
+  ]
+}

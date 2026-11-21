@@ -1,0 +1,98 @@
+{
+  "a2": {
+    "functional_passed": 151,
+    "functional_total": 151,
+    "performance_cases": 16,
+    "work_kernels_per_call": 4,
+    "environment": {
+      "target": "npu.a2",
+      "device_name": "Ascend910B3",
+      "device_index": 0,
+      "total_memory": 65452113920,
+      "l2_bytes": 201326592,
+      "runner_id": "ascend-910b3-184-3-2",
+      "python": "3.10.12",
+      "torch": "2.7.1+cpu",
+      "torch_npu": "2.7.1.post11.dev20261022",
+      "torch_mlu": null,
+      "triton": "3.6.0",
+      "triton_distributions": {
+        "triton": "3.6.0",
+        "triton_ascend": "3.6.0"
+      }
+    },
+    "measurement": {
+      "timers": [
+        "profiler"
+      ],
+      "profiler_timer": "per_call_kernel_v5",
+      "event_timer": "current_stream_batch_v1",
+      "e2e_timer": "synchronized_wall_v2",
+      "memory": "allocator_peak_after_timing_v1",
+      "batch": 1,
+      "reduction": "span",
+      "cache": {
+        "profiler": {
+          "instances": 1,
+          "flush_bytes": 805306368
+        }
+      },
+      "warmup": 10,
+      "repeats": 10,
+      "harness_sha256": "a9e9bd0301c33ae1518200fa090ec0d1025912f12b80aadc7030aaa72b374e78"
+    }
+  },
+  "a5": {
+    "functional_passed": 151,
+    "functional_total": 151,
+    "performance_cases": 16,
+    "work_kernels_per_call": 1,
+    "environment": {
+      "target": "npu.a5",
+      "device_name": "Ascend950PR_957c",
+      "device_index": 0,
+      "total_memory": 115661275136,
+      "l2_bytes": 117440512,
+      "runner_id": "ascend-950pr-228-2-2",
+      "python": "3.12.3",
+      "torch": "2.10.0+cpu",
+      "torch_npu": "2.10.0.post7.dev20261022",
+      "torch_mlu": null,
+      "triton": "3.6.0",
+      "triton_distributions": {
+        "triton": "3.6.0",
+        "triton_ascend": "3.6.0"
+      }
+    },
+    "measurement": {
+      "timers": [
+        "profiler"
+      ],
+      "profiler_timer": "per_call_kernel_v5",
+      "event_timer": "current_stream_batch_v1",
+      "e2e_timer": "synchronized_wall_v2",
+      "memory": "allocator_peak_after_timing_v1",
+      "batch": 1,
+      "reduction": "span",
+      "cache": {
+        "profiler": {
+          "instances": 1,
+          "flush_bytes": 469762048
+        }
+      },
+      "warmup": 10,
+      "repeats": 10,
+      "harness_sha256": "a9e9bd0301c33ae1518200fa090ec0d1025912f12b80aadc7030aaa72b374e78"
+    }
+  },
+  "a5_warm": {
+    "reference_l20_speedup": 1.704902310945695,
+    "aggregate_semantic_mbu_pct": 98.62856596385718,
+    "copy_GBps": 1214.388503415872
+  },
+  "a5_cold": {
+    "reference_l20_speedup": 1.1203405908921187,
+    "aggregate_semantic_mbu_pct": 90.94055936015124,
+    "copy_GBps": 1175.3624914058114
+  }
+}

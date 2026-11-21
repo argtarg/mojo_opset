@@ -1,0 +1,1827 @@
+{
+  "schema_version": 2,
+  "created_at": "2026-11-21T06:43:01.428565+00:00",
+  "revision": {
+    "commit": null,
+    "dirty": null
+  },
+  "cases": [
+    {
+      "id": "tests/performance/functions/test_indexed_gate_rms_norm_scale_shift.py::test_indexed_gate_rms_norm_scale_shift[model_t2va_smoke_step0_u1]",
+      "parameters": {
+        "case_id": "model_t2va_smoke_step0_u1",
+        "rows": 4096,
+        "hidden": 5376,
+        "conditions": 3,
+        "dtype": "torch.bfloat16",
+        "phase": "forward",
+        "op": "indexed_gate_rms_norm_scale_shift_infer",
+        "implementation": "triton",
+        "workload_sha256": "87f6e701597321039ad6dec65dbce73b2e1cd06370a1552266a97edd79039bbd"
+      },
+      "metrics": {
+        "profiler_span_us": {
+          "median": 208.0894999999996,
+          "p10": 203.85100000000057,
+          "p90": 210.52800000000025,
+          "mad": 2.367999999999938,
+          "samples": [
+            210.52800000000025,
+            207.91299999999956,
+            205.79200000000037,
+            211.10800000000017,
+            205.5640000000003,
+            209.51000000000022,
+            208.6839999999993,
+            203.85100000000057,
+            204.98999999999978,
+            208.26599999999962
+          ],
+          "kernels": [
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 210.52800000000025
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 207.91299999999956
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 205.79200000000037
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 211.10800000000017
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 205.5640000000003
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 209.51000000000022
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 208.6839999999993
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 203.85100000000057
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 204.98999999999978
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 208.26599999999962
+              }
+            ]
+          ]
+        }
+      },
+      "memory": {
+        "baseline_allocated_bytes": 88317440,
+        "peak_allocated_bytes": 176397824,
+        "incremental_peak_bytes": 88080384
+      }
+    },
+    {
+      "id": "tests/performance/functions/test_indexed_gate_rms_norm_scale_shift.py::test_indexed_gate_rms_norm_scale_shift[model_t2va_smoke_mid_u1]",
+      "parameters": {
+        "case_id": "model_t2va_smoke_mid_u1",
+        "rows": 4096,
+        "hidden": 5376,
+        "conditions": 6,
+        "dtype": "torch.bfloat16",
+        "phase": "forward",
+        "op": "indexed_gate_rms_norm_scale_shift_infer",
+        "implementation": "triton",
+        "workload_sha256": "87f6e701597321039ad6dec65dbce73b2e1cd06370a1552266a97edd79039bbd"
+      },
+      "metrics": {
+        "profiler_span_us": {
+          "median": 206.25149999999985,
+          "p10": 205.53300000000036,
+          "p90": 208.27400000000034,
+          "mad": 0.594499999999698,
+          "samples": [
+            205.78099999999995,
+            207.93600000000015,
+            205.95499999999993,
+            205.53300000000036,
+            206.54799999999977,
+            208.27400000000034,
+            209.05100000000039,
+            205.8729999999996,
+            208.09900000000016,
+            205.91399999999976
+          ],
+          "kernels": [
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 205.78099999999995
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 207.93600000000015
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 205.95499999999993
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 205.53300000000036
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 206.54799999999977
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 208.27400000000034
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 209.05100000000039
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 205.8729999999996
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 208.09900000000016
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 205.91399999999976
+              }
+            ]
+          ]
+        }
+      },
+      "memory": {
+        "baseline_allocated_bytes": 88510976,
+        "peak_allocated_bytes": 176591360,
+        "incremental_peak_bytes": 88080384
+      }
+    },
+    {
+      "id": "tests/performance/functions/test_indexed_gate_rms_norm_scale_shift.py::test_indexed_gate_rms_norm_scale_shift[model_t2va_smoke_mid_u8_rank0]",
+      "parameters": {
+        "case_id": "model_t2va_smoke_mid_u8_rank0",
+        "rows": 512,
+        "hidden": 5376,
+        "conditions": 6,
+        "dtype": "torch.bfloat16",
+        "phase": "forward",
+        "op": "indexed_gate_rms_norm_scale_shift_infer",
+        "implementation": "triton",
+        "workload_sha256": "87f6e701597321039ad6dec65dbce73b2e1cd06370a1552266a97edd79039bbd"
+      },
+      "metrics": {
+        "profiler_span_us": {
+          "median": 32.68299999999999,
+          "p10": 31.56899999999996,
+          "p90": 33.81800000000021,
+          "mad": 0.6604999999998427,
+          "samples": [
+            33.3599999999999,
+            31.63700000000017,
+            32.039000000000215,
+            34.73199999999997,
+            31.56899999999996,
+            33.81800000000021,
+            33.23400000000038,
+            32.327000000000226,
+            32.452000000000226,
+            32.91399999999976
+          ],
+          "kernels": [
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 33.3599999999999
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 31.63700000000017
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 32.039000000000215
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 34.73199999999997
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 31.56899999999996
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 33.81800000000021
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 33.23400000000038
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 32.327000000000226
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 32.452000000000226
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 32.91399999999976
+              }
+            ]
+          ]
+        }
+      },
+      "memory": {
+        "baseline_allocated_bytes": 11411968,
+        "peak_allocated_bytes": 22422016,
+        "incremental_peak_bytes": 11010048
+      }
+    },
+    {
+      "id": "tests/performance/functions/test_indexed_gate_rms_norm_scale_shift.py::test_indexed_gate_rms_norm_scale_shift[model_t2va_doc209_u1]",
+      "parameters": {
+        "case_id": "model_t2va_doc209_u1",
+        "rows": 16448,
+        "hidden": 5376,
+        "conditions": 6,
+        "dtype": "torch.bfloat16",
+        "phase": "forward",
+        "op": "indexed_gate_rms_norm_scale_shift_infer",
+        "implementation": "triton",
+        "workload_sha256": "87f6e701597321039ad6dec65dbce73b2e1cd06370a1552266a97edd79039bbd"
+      },
+      "metrics": {
+        "profiler_span_us": {
+          "median": 651.3429999999998,
+          "p10": 647.7129999999997,
+          "p90": 653.1049999999996,
+          "mad": 1.2564999999995052,
+          "samples": [
+            653.1049999999996,
+            650.5560000000005,
+            651.8299999999999,
+            647.7129999999997,
+            652.1630000000005,
+            655.2389999999996,
+            650.8559999999998,
+            650.2880000000005,
+            652.8009999999995,
+            649.875
+          ],
+          "kernels": [
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 653.1049999999996
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 650.5560000000005
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 651.8299999999999
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 647.7129999999997
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 652.1630000000005
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 655.2389999999996
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 650.8559999999998
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 650.2880000000005
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 652.8009999999995
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 649.875
+              }
+            ]
+          ]
+        }
+      },
+      "memory": {
+        "baseline_allocated_bytes": 354227200,
+        "peak_allocated_bytes": 707924992,
+        "incremental_peak_bytes": 353697792
+      }
+    },
+    {
+      "id": "tests/performance/functions/test_indexed_gate_rms_norm_scale_shift.py::test_indexed_gate_rms_norm_scale_shift[model_t2va_doc209_u4_rank0]",
+      "parameters": {
+        "case_id": "model_t2va_doc209_u4_rank0",
+        "rows": 4112,
+        "hidden": 5376,
+        "conditions": 6,
+        "dtype": "torch.bfloat16",
+        "phase": "forward",
+        "op": "indexed_gate_rms_norm_scale_shift_infer",
+        "implementation": "triton",
+        "workload_sha256": "87f6e701597321039ad6dec65dbce73b2e1cd06370a1552266a97edd79039bbd"
+      },
+      "metrics": {
+        "profiler_span_us": {
+          "median": 206.38799999999992,
+          "p10": 203.21500000000015,
+          "p90": 209.18600000000015,
+          "mad": 0.5720000000001164,
+          "samples": [
+            206.78099999999995,
+            209.18600000000015,
+            205.63699999999972,
+            206.1790000000001,
+            203.21500000000015,
+            204.6210000000001,
+            206.59699999999975,
+            206.76000000000022,
+            209.5030000000006,
+            206.0699999999997
+          ],
+          "kernels": [
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 206.78099999999995
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 209.18600000000015
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 205.63699999999972
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 206.1790000000001
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 203.21500000000015
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 204.6210000000001
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 206.59699999999975
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 206.76000000000022
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 209.5030000000006
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 206.0699999999997
+              }
+            ]
+          ]
+        }
+      },
+      "memory": {
+        "baseline_allocated_bytes": 88855552,
+        "peak_allocated_bytes": 177280000,
+        "incremental_peak_bytes": 88424448
+      }
+    },
+    {
+      "id": "tests/performance/functions/test_indexed_gate_rms_norm_scale_shift.py::test_indexed_gate_rms_norm_scale_shift[model_t2va_doc209_u4_rank3]",
+      "parameters": {
+        "case_id": "model_t2va_doc209_u4_rank3",
+        "rows": 4112,
+        "hidden": 5376,
+        "conditions": 6,
+        "dtype": "torch.bfloat16",
+        "phase": "forward",
+        "op": "indexed_gate_rms_norm_scale_shift_infer",
+        "implementation": "triton",
+        "workload_sha256": "87f6e701597321039ad6dec65dbce73b2e1cd06370a1552266a97edd79039bbd"
+      },
+      "metrics": {
+        "profiler_span_us": {
+          "median": 208.538,
+          "p10": 205.11099999999988,
+          "p90": 210.2449999999999,
+          "mad": 1.4339999999997417,
+          "samples": [
+            205.69000000000005,
+            208.99699999999984,
+            210.2449999999999,
+            212.4399999999996,
+            205.11099999999988,
+            208.7550000000001,
+            209.1319999999996,
+            207.3770000000004,
+            208.3209999999999,
+            206.25400000000081
+          ],
+          "kernels": [
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 205.69000000000005
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 208.99699999999984
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 210.2449999999999
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 212.4399999999996
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 205.11099999999988
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 208.7550000000001
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 209.1319999999996
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 207.3770000000004
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 208.3209999999999
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 206.25400000000081
+              }
+            ]
+          ]
+        }
+      },
+      "memory": {
+        "baseline_allocated_bytes": 88855552,
+        "peak_allocated_bytes": 177280000,
+        "incremental_peak_bytes": 88424448
+      }
+    },
+    {
+      "id": "tests/performance/functions/test_indexed_gate_rms_norm_scale_shift.py::test_indexed_gate_rms_norm_scale_shift[model_t2va_recipe209_u1]",
+      "parameters": {
+        "case_id": "model_t2va_recipe209_u1",
+        "rows": 63360,
+        "hidden": 5376,
+        "conditions": 6,
+        "dtype": "torch.bfloat16",
+        "phase": "forward",
+        "op": "indexed_gate_rms_norm_scale_shift_infer",
+        "implementation": "triton",
+        "workload_sha256": "87f6e701597321039ad6dec65dbce73b2e1cd06370a1552266a97edd79039bbd"
+      },
+      "metrics": {
+        "profiler_span_us": {
+          "median": 2331.8274999999994,
+          "p10": 2319.165000000001,
+          "p90": 2333.8929999999964,
+          "mad": 2.459499999997206,
+          "samples": [
+            2326.258999999998,
+            2319.165000000001,
+            2331.5999999999985,
+            2328.974000000002,
+            2333.8929999999964,
+            2332.230000000003,
+            2323.2750000000015,
+            2342.957000000002,
+            2332.0550000000003,
+            2332.3410000000003
+          ],
+          "kernels": [
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 2326.258999999998
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 2319.165000000001
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 2331.5999999999985
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 2328.974000000002
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 2333.8929999999964
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 2332.230000000003
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 2323.2750000000015
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 2342.957000000002
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 2332.0550000000003
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 2332.3410000000003
+              }
+            ]
+          ]
+        }
+      },
+      "memory": {
+        "baseline_allocated_bytes": 1364053504,
+        "peak_allocated_bytes": 2727202304,
+        "incremental_peak_bytes": 1363148800
+      }
+    },
+    {
+      "id": "tests/performance/functions/test_indexed_gate_rms_norm_scale_shift.py::test_indexed_gate_rms_norm_scale_shift[model_t2va_recipe209_u4_rank0]",
+      "parameters": {
+        "case_id": "model_t2va_recipe209_u4_rank0",
+        "rows": 15840,
+        "hidden": 5376,
+        "conditions": 6,
+        "dtype": "torch.bfloat16",
+        "phase": "forward",
+        "op": "indexed_gate_rms_norm_scale_shift_infer",
+        "implementation": "triton",
+        "workload_sha256": "87f6e701597321039ad6dec65dbce73b2e1cd06370a1552266a97edd79039bbd"
+      },
+      "metrics": {
+        "profiler_span_us": {
+          "median": 629.174500000001,
+          "p10": 624.3099999999995,
+          "p90": 631.4360000000006,
+          "mad": 1.7859999999991487,
+          "samples": [
+            631.4360000000006,
+            626.5679999999993,
+            632.5480000000007,
+            631.2299999999996,
+            628.6260000000002,
+            630.6910000000007,
+            628.6640000000007,
+            628.6119999999992,
+            624.3099999999995,
+            629.6850000000013
+          ],
+          "kernels": [
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 631.4360000000006
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 626.5679999999993
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 632.5480000000007
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 631.2299999999996
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 628.6260000000002
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 630.6910000000007
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 628.6640000000007
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 628.6119999999992
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 624.3099999999995
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 629.6850000000013
+              }
+            ]
+          ]
+        }
+      },
+      "memory": {
+        "baseline_allocated_bytes": 341148160,
+        "peak_allocated_bytes": 681771520,
+        "incremental_peak_bytes": 340623360
+      }
+    },
+    {
+      "id": "tests/performance/functions/test_indexed_gate_rms_norm_scale_shift.py::test_indexed_gate_rms_norm_scale_shift[model_fl2va_first_step0_u4]",
+      "parameters": {
+        "case_id": "model_fl2va_first_step0_u4",
+        "rows": 15056,
+        "hidden": 5376,
+        "conditions": 6,
+        "dtype": "torch.bfloat16",
+        "phase": "forward",
+        "op": "indexed_gate_rms_norm_scale_shift_infer",
+        "implementation": "triton",
+        "workload_sha256": "87f6e701597321039ad6dec65dbce73b2e1cd06370a1552266a97edd79039bbd"
+      },
+      "metrics": {
+        "profiler_span_us": {
+          "median": 600.1749999999993,
+          "p10": 594.3500000000004,
+          "p90": 604.1409999999996,
+          "mad": 2.2255000000004657,
+          "samples": [
+            604.2389999999996,
+            604.1409999999996,
+            602.3690000000006,
+            598.4189999999999,
+            597.9179999999997,
+            594.3500000000004,
+            602.0349999999999,
+            600.6479999999992,
+            599.7019999999993,
+            596.2700000000004
+          ],
+          "kernels": [
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 604.2389999999996
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 604.1409999999996
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 602.3690000000006
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 598.4189999999999
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 597.9179999999997
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 594.3500000000004
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 602.0349999999999
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 600.6479999999992
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 599.7019999999993
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 596.2700000000004
+              }
+            ]
+          ]
+        }
+      },
+      "memory": {
+        "baseline_allocated_bytes": 324282880,
+        "peak_allocated_bytes": 648047104,
+        "incremental_peak_bytes": 323764224
+      }
+    },
+    {
+      "id": "tests/performance/functions/test_indexed_gate_rms_norm_scale_shift.py::test_indexed_gate_rms_norm_scale_shift[model_fl2va_first_mid_u4]",
+      "parameters": {
+        "case_id": "model_fl2va_first_mid_u4",
+        "rows": 15056,
+        "hidden": 5376,
+        "conditions": 9,
+        "dtype": "torch.bfloat16",
+        "phase": "forward",
+        "op": "indexed_gate_rms_norm_scale_shift_infer",
+        "implementation": "triton",
+        "workload_sha256": "87f6e701597321039ad6dec65dbce73b2e1cd06370a1552266a97edd79039bbd"
+      },
+      "metrics": {
+        "profiler_span_us": {
+          "median": 597.9970000000003,
+          "p10": 597.1350000000002,
+          "p90": 601.3739999999998,
+          "mad": 0.6860000000001492,
+          "samples": [
+            597.4870000000001,
+            601.04,
+            597.8079999999991,
+            597.9920000000002,
+            597.8459999999995,
+            597.1350000000002,
+            598.0020000000004,
+            602.1029999999992,
+            599.3009999999995,
+            601.3739999999998
+          ],
+          "kernels": [
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 597.4870000000001
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 601.04
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 597.8079999999991
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 597.9920000000002
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 597.8459999999995
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 597.1350000000002
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 598.0020000000004
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 602.1029999999992
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 599.3009999999995
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 601.3739999999998
+              }
+            ]
+          ]
+        }
+      },
+      "memory": {
+        "baseline_allocated_bytes": 324476416,
+        "peak_allocated_bytes": 648240640,
+        "incremental_peak_bytes": 323764224
+      }
+    },
+    {
+      "id": "tests/performance/functions/test_indexed_gate_rms_norm_scale_shift.py::test_indexed_gate_rms_norm_scale_shift[model_fl2va_firstlast124_u4]",
+      "parameters": {
+        "case_id": "model_fl2va_firstlast124_u4",
+        "rows": 10192,
+        "hidden": 5376,
+        "conditions": 9,
+        "dtype": "torch.bfloat16",
+        "phase": "forward",
+        "op": "indexed_gate_rms_norm_scale_shift_infer",
+        "implementation": "triton",
+        "workload_sha256": "87f6e701597321039ad6dec65dbce73b2e1cd06370a1552266a97edd79039bbd"
+      },
+      "metrics": {
+        "profiler_span_us": {
+          "median": 424.7900000000009,
+          "p10": 423.4969999999994,
+          "p90": 426.8779999999997,
+          "mad": 1.107499999999618,
+          "samples": [
+            426.8779999999997,
+            425.9409999999998,
+            427.27499999999964,
+            423.4969999999994,
+            424.25,
+            423.72600000000057,
+            425.71999999999935,
+            424.4330000000009,
+            425.14700000000084,
+            423.59599999999955
+          ],
+          "kernels": [
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 426.8779999999997
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 425.9409999999998
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 427.27499999999964
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 423.4969999999994
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 424.25
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 423.72600000000057
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 425.71999999999935
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 424.4330000000009
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 425.14700000000084
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 423.59599999999955
+              }
+            ]
+          ]
+        }
+      },
+      "memory": {
+        "baseline_allocated_bytes": 219842048,
+        "peak_allocated_bytes": 439010816,
+        "incremental_peak_bytes": 219168768
+      }
+    },
+    {
+      "id": "tests/performance/functions/test_indexed_gate_rms_norm_scale_shift.py::test_indexed_gate_rms_norm_scale_shift[model_t2va_default_limit_u4_rank3]",
+      "parameters": {
+        "case_id": "model_t2va_default_limit_u4_rank3",
+        "rows": 27312,
+        "hidden": 5376,
+        "conditions": 6,
+        "dtype": "torch.bfloat16",
+        "phase": "forward",
+        "op": "indexed_gate_rms_norm_scale_shift_infer",
+        "implementation": "triton",
+        "workload_sha256": "87f6e701597321039ad6dec65dbce73b2e1cd06370a1552266a97edd79039bbd"
+      },
+      "metrics": {
+        "profiler_span_us": {
+          "median": 1037.4795000000004,
+          "p10": 1032.5699999999997,
+          "p90": 1040.071,
+          "mad": 2.8739999999997963,
+          "samples": [
+            1037.6589999999997,
+            1034.3230000000003,
+            1037.4740000000002,
+            1033.295,
+            1032.5699999999997,
+            1042.0380000000005,
+            1040.071,
+            1037.4850000000006,
+            1038.8889999999992,
+            1032.7819999999992
+          ],
+          "kernels": [
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 1037.6589999999997
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 1034.3230000000003
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 1037.4740000000002
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 1033.295
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 1032.5699999999997
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 1042.0380000000005
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 1040.071
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 1037.4850000000006
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 1038.8889999999992
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 1032.7819999999992
+              }
+            ]
+          ]
+        }
+      },
+      "memory": {
+        "baseline_allocated_bytes": 587933696,
+        "peak_allocated_bytes": 1175250944,
+        "incremental_peak_bytes": 587317248
+      }
+    },
+    {
+      "id": "tests/performance/functions/test_indexed_gate_rms_norm_scale_shift.py::test_indexed_gate_rms_norm_scale_shift[model_ref2va_img_audio_step0_u1]",
+      "parameters": {
+        "case_id": "model_ref2va_img_audio_step0_u1",
+        "rows": 10688,
+        "hidden": 5376,
+        "conditions": 9,
+        "dtype": "torch.bfloat16",
+        "phase": "forward",
+        "op": "indexed_gate_rms_norm_scale_shift_infer",
+        "implementation": "triton",
+        "workload_sha256": "87f6e701597321039ad6dec65dbce73b2e1cd06370a1552266a97edd79039bbd"
+      },
+      "metrics": {
+        "profiler_span_us": {
+          "median": 444.45899999999983,
+          "p10": 441.8600000000006,
+          "p90": 448.34200000000055,
+          "mad": 1.606000000000222,
+          "samples": [
+            447.72500000000036,
+            443.7970000000005,
+            445.83500000000004,
+            442.6229999999996,
+            444.1360000000004,
+            449.97999999999956,
+            443.8009999999995,
+            444.78199999999924,
+            441.8600000000006,
+            448.34200000000055
+          ],
+          "kernels": [
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 447.72500000000036
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 443.7970000000005
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 445.83500000000004
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 442.6229999999996
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 444.1360000000004
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 449.97999999999956
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 443.8009999999995
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 444.78199999999924
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 441.8600000000006
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 448.34200000000055
+              }
+            ]
+          ]
+        }
+      },
+      "memory": {
+        "baseline_allocated_bytes": 230511616,
+        "peak_allocated_bytes": 460346368,
+        "incremental_peak_bytes": 229834752
+      }
+    },
+    {
+      "id": "tests/performance/functions/test_indexed_gate_rms_norm_scale_shift.py::test_indexed_gate_rms_norm_scale_shift[model_ref2va_img_audio_mid_u1]",
+      "parameters": {
+        "case_id": "model_ref2va_img_audio_mid_u1",
+        "rows": 10688,
+        "hidden": 5376,
+        "conditions": 12,
+        "dtype": "torch.bfloat16",
+        "phase": "forward",
+        "op": "indexed_gate_rms_norm_scale_shift_infer",
+        "implementation": "triton",
+        "workload_sha256": "87f6e701597321039ad6dec65dbce73b2e1cd06370a1552266a97edd79039bbd"
+      },
+      "metrics": {
+        "profiler_span_us": {
+          "median": 443.65750000000025,
+          "p10": 441.009,
+          "p90": 445.0540000000001,
+          "mad": 1.2344999999995707,
+          "samples": [
+            444.72999999999956,
+            441.3190000000004,
+            444.4309999999996,
+            445.65300000000025,
+            441.009,
+            445.0540000000001,
+            442.7530000000006,
+            442.22999999999956,
+            443.3019999999997,
+            444.01300000000083
+          ],
+          "kernels": [
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 444.72999999999956
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 441.3190000000004
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 444.4309999999996
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 445.65300000000025
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 441.009
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 445.0540000000001
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 442.7530000000006
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 442.22999999999956
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 443.3019999999997
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 444.01300000000083
+              }
+            ]
+          ]
+        }
+      },
+      "memory": {
+        "baseline_allocated_bytes": 230705152,
+        "peak_allocated_bytes": 460539904,
+        "incremental_peak_bytes": 229834752
+      }
+    },
+    {
+      "id": "tests/performance/functions/test_indexed_gate_rms_norm_scale_shift.py::test_indexed_gate_rms_norm_scale_shift[model_batch2_same_step_u4_rank0]",
+      "parameters": {
+        "case_id": "model_batch2_same_step_u4_rank0",
+        "rows": 5136,
+        "hidden": 5376,
+        "conditions": 6,
+        "dtype": "torch.bfloat16",
+        "phase": "forward",
+        "op": "indexed_gate_rms_norm_scale_shift_infer",
+        "implementation": "triton",
+        "workload_sha256": "87f6e701597321039ad6dec65dbce73b2e1cd06370a1552266a97edd79039bbd"
+      },
+      "metrics": {
+        "profiler_span_us": {
+          "median": 245.28499999999985,
+          "p10": 239.1810000000005,
+          "p90": 248.98399999999947,
+          "mad": 2.388500000000022,
+          "samples": [
+            246.07200000000012,
+            249.31100000000015,
+            247.0369999999998,
+            243.36200000000008,
+            241.3770000000004,
+            244.97199999999975,
+            245.59799999999996,
+            242.43099999999959,
+            248.98399999999947,
+            239.1810000000005
+          ],
+          "kernels": [
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 246.07200000000012
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 249.31100000000015
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 247.0369999999998
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 243.36200000000008
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 241.3770000000004
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 244.97199999999975
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 245.59799999999996
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 242.43099999999959
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 248.98399999999947
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 239.1810000000005
+              }
+            ]
+          ]
+        }
+      },
+      "memory": {
+        "baseline_allocated_bytes": 110883840,
+        "peak_allocated_bytes": 221328384,
+        "incremental_peak_bytes": 110444544
+      }
+    },
+    {
+      "id": "tests/performance/functions/test_indexed_gate_rms_norm_scale_shift.py::test_indexed_gate_rms_norm_scale_shift[model_batch2_mixed_step_u4_rank3]",
+      "parameters": {
+        "case_id": "model_batch2_mixed_step_u4_rank3",
+        "rows": 5136,
+        "hidden": 5376,
+        "conditions": 9,
+        "dtype": "torch.bfloat16",
+        "phase": "forward",
+        "op": "indexed_gate_rms_norm_scale_shift_infer",
+        "implementation": "triton",
+        "workload_sha256": "87f6e701597321039ad6dec65dbce73b2e1cd06370a1552266a97edd79039bbd"
+      },
+      "metrics": {
+        "profiler_span_us": {
+          "median": 244.85550000000012,
+          "p10": 241.45200000000023,
+          "p90": 246.9680000000003,
+          "mad": 1.163499999999658,
+          "samples": [
+            245.05000000000018,
+            249.87800000000016,
+            246.9680000000003,
+            244.46200000000044,
+            242.3720000000003,
+            241.45200000000023,
+            244.33299999999963,
+            244.66100000000006,
+            245.9960000000001,
+            246.04199999999946
+          ],
+          "kernels": [
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 245.05000000000018
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 249.87800000000016
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 246.9680000000003
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 244.46200000000044
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 242.3720000000003
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 241.45200000000023
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 244.33299999999963
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 244.66100000000006
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 245.9960000000001
+              }
+            ],
+            [
+              {
+                "name": "_indexed_gate_rms_shift_kernel",
+                "start_us": 0.0,
+                "duration_us": 246.04199999999946
+              }
+            ]
+          ]
+        }
+      },
+      "memory": {
+        "baseline_allocated_bytes": 111077376,
+        "peak_allocated_bytes": 221521920,
+        "incremental_peak_bytes": 110444544
+      }
+    }
+  ],
+  "skipped": [],
+  "host": "ascend-950pr-228-2-2",
+  "environment": {
+    "target": "npu.a5",
+    "device_name": "Ascend950PR_957c",
+    "device_index": 0,
+    "total_memory": 115661275136,
+    "l2_bytes": 117440512,
+    "runner_id": "ascend-950pr-228-2-2",
+    "python": "3.12.3",
+    "torch": "2.10.0+cpu",
+    "torch_npu": "2.10.0.post7.dev20261022",
+    "torch_mlu": null,
+    "triton": "3.6.0",
+    "triton_distributions": {
+      "triton": "3.6.0",
+      "triton_ascend": "3.6.0"
+    }
+  },
+  "measurement": {
+    "timers": [
+      "profiler"
+    ],
+    "profiler_timer": "per_call_kernel_v5",
+    "event_timer": "current_stream_batch_v1",
+    "e2e_timer": "synchronized_wall_v2",
+    "memory": "allocator_peak_after_timing_v1",
+    "batch": 1,
+    "reduction": "span",
+    "cache": {
+      "profiler": {
+        "instances": 1,
+        "flush_bytes": 469762048
+      }
+    },
+    "warmup": 10,
+    "repeats": 10,
+    "harness_sha256": "a9e9bd0301c33ae1518200fa090ec0d1025912f12b80aadc7030aaa72b374e78"
+  },
+  "config": null,
+  "exitstatus": 0
+}

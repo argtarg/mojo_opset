@@ -1,0 +1,25 @@
+{
+  "a2": {
+    "source_sha256": "bfbf04aef961984bc0050be36e9bd0e58fdef703a2bbbd276c76eaa811434c20",
+    "integrated_sha256": "2ae1989981e28e012e54f8070cb1abb181051c630a4d7550931c3845fc64e389",
+    "identical_functions": [
+      "_indexed_gate_rms_shift_kernel",
+      "_plan"
+    ],
+    "identical_launch_AST": true
+  },
+  "a5": {
+    "source_sha256": "cb970f0caf9ca43f2e49e2e10ab09461e7385d13c1018cfe13b77ce7e47df051",
+    "integrated_sha256": "eaaa05abf893253b0b9cf820b79798112357d6343cc4ee8045047c6407e5f17d",
+    "identical_functions": [
+      "_indexed_gate_rms_shift_kernel",
+      "_indexed_gate_rms_shift_cached_kernel",
+      "_indexed_gate_rms_shift_row_kernel",
+      "_indexed_gate_rms_shift_two_tile_kernel",
+      "_indexed_gate_rms_shift_table_kernel",
+      "_plan",
+      "_indexed_gate_rms_shift_native_wide_kernel"
+    ],
+    "identical_launch_AST": true
+  }
+}
