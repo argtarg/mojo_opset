@@ -1,4 +1,8 @@
 {
+  ".gitattributes": {
+    "bytes": 8,
+    "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+  },
   "a2_integration_accuracy.xml": {
     "bytes": 21588,
     "sha256": "7415381b5e6a33836e8d78a6ed738717e97970ed1c8368512867c3a592ec6f4a"
@@ -82,6 +86,10 @@
   "model16_cases.json": {
     "bytes": 55891,
     "sha256": "ffc35b8ff21497babced91dfdc0afb9191956dc8c805e90ea9d4ea1128be02f6"
+  },
+  "README.md": {
+    "bytes": 3031,
+    "sha256": "7b5605c6ea3bc3c3b666421aee9fcf029c5ee0801273e137c3e4efd7492fd71e"
   },
   "source_audit.json": {
     "bytes": 904,
