@@ -1,0 +1,23 @@
+{
+  "a2": {
+    "standalone_sha256": "b2a76fcbfe74294a18662c584632f3d08445d7ab59ec1cc990ff376cdac661e1",
+    "model16_aggregate_mbu_pct": 72.9885089777143,
+    "samples_per_variant": 24,
+    "cold_copy_gbps": 1188.4800665885962,
+    "model16_mean_mbu_pct": 69.18512364658027,
+    "all20_mbu_pct": 73.84165327309282
+  },
+  "a5": {
+    "standalone_sha256": "4484f2ab9ed1d5383789e7992067263b12cd515b3b4885a737ac806b08d08d60",
+    "warm_l20_over_a5_geomean": 2.253314538115858,
+    "lowest_speedup": 2.121525584453736,
+    "case_count": 15,
+    "l20_source_column": "warm_full_device_us",
+    "l20_status": "user-provided INTERFERENCE_UNVERIFIED",
+    "copy_calibration_gbps": {
+      "before": 1452.88630866644,
+      "after": 1452.6730388595533
+    },
+    "copy_drift_pct": 0.014680120512308383
+  }
+}

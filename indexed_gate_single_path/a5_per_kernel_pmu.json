@@ -1,0 +1,722 @@
+{
+  "model_t2va_smoke_step0_u1": {
+    "parent": {
+      "duration_us": 112.848,
+      "round_medians_us": [
+        112.848
+      ],
+      "pmu": {
+        "aiv_weight_us": 657.97,
+        "activity_time_us": {
+          "Vector": 364.855,
+          "Scalar": 120.61699999999999,
+          "MTE2": 544.7339999999999,
+          "MTE3": 362.808
+        },
+        "activity_pct": {
+          "Vector": 55.451616335091266,
+          "Scalar": 18.331686855023783,
+          "MTE2": 82.79009681292459,
+          "MTE3": 55.14050792589328
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    },
+    "candidate": {
+      "duration_us": 114.19,
+      "round_medians_us": [
+        114.19
+      ],
+      "pmu": {
+        "aiv_weight_us": 664.35,
+        "activity_time_us": {
+          "Vector": 325.06,
+          "Scalar": 115.348,
+          "MTE2": 576.72,
+          "MTE3": 325.896
+        },
+        "activity_pct": {
+          "Vector": 48.92902837359825,
+          "Scalar": 17.362534808459394,
+          "MTE2": 86.80966358094378,
+          "MTE3": 49.054865658162115
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    }
+  },
+  "model_t2va_smoke_mid_u1": {
+    "parent": {
+      "duration_us": 109.106,
+      "round_medians_us": [
+        109.106
+      ],
+      "pmu": {
+        "aiv_weight_us": 634.58,
+        "activity_time_us": {
+          "Vector": 367.038,
+          "Scalar": 121.809,
+          "MTE2": 525.583,
+          "MTE3": 309.423
+        },
+        "activity_pct": {
+          "Vector": 57.8395159002805,
+          "Scalar": 19.195215733240882,
+          "MTE2": 82.8237574458697,
+          "MTE3": 48.76028239150304
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    },
+    "candidate": {
+      "duration_us": 110.12100000000001,
+      "round_medians_us": [
+        110.12100000000001
+      ],
+      "pmu": {
+        "aiv_weight_us": 638.58,
+        "activity_time_us": {
+          "Vector": 324.379,
+          "Scalar": 122.477,
+          "MTE2": 561.491,
+          "MTE3": 283.08299999999997
+        },
+        "activity_pct": {
+          "Vector": 50.79692442607034,
+          "Scalar": 19.17958595634063,
+          "MTE2": 87.92805913119733,
+          "MTE3": 44.33007610636098
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    }
+  },
+  "model_t2va_doc209_u1": {
+    "parent": {
+      "duration_us": 493.6065,
+      "round_medians_us": [
+        493.6065
+      ],
+      "pmu": {
+        "aiv_weight_us": 2968.07,
+        "activity_time_us": {
+          "Vector": 1438.333,
+          "Scalar": 503.795,
+          "MTE2": 2674.763,
+          "MTE3": 2027.976
+        },
+        "activity_pct": {
+          "Vector": 48.460211517922424,
+          "Scalar": 16.973824741330223,
+          "MTE2": 90.11792174712859,
+          "MTE3": 68.32642087282308
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    },
+    "candidate": {
+      "duration_us": 497.244,
+      "round_medians_us": [
+        497.244
+      ],
+      "pmu": {
+        "aiv_weight_us": 2980.24,
+        "activity_time_us": {
+          "Vector": 1272.481,
+          "Scalar": 483.861,
+          "MTE2": 2765.608,
+          "MTE3": 1679.277
+        },
+        "activity_pct": {
+          "Vector": 42.69726599200065,
+          "Scalar": 16.235638740504122,
+          "MTE2": 92.7981639062626,
+          "MTE3": 56.34703916463104
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    }
+  },
+  "model_t2va_doc209_u4_rank0": {
+    "parent": {
+      "duration_us": 106.7515,
+      "round_medians_us": [
+        106.7515
+      ],
+      "pmu": {
+        "aiv_weight_us": 623.5,
+        "activity_time_us": {
+          "Vector": 367.847,
+          "Scalar": 113.91199999999999,
+          "MTE2": 513.457,
+          "MTE3": 282.376
+        },
+        "activity_pct": {
+          "Vector": 58.99711307137129,
+          "Scalar": 18.269767441860463,
+          "MTE2": 82.35076182838813,
+          "MTE3": 45.288853247794705
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    },
+    "candidate": {
+      "duration_us": 107.162,
+      "round_medians_us": [
+        107.162
+      ],
+      "pmu": {
+        "aiv_weight_us": 625.49,
+        "activity_time_us": {
+          "Vector": 325.395,
+          "Scalar": 112.404,
+          "MTE2": 533.073,
+          "MTE3": 273.224
+        },
+        "activity_pct": {
+          "Vector": 52.02241442708916,
+          "Scalar": 17.970551087947047,
+          "MTE2": 85.22486370685382,
+          "MTE3": 43.68159363059361
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    }
+  },
+  "model_t2va_doc209_u4_rank3": {
+    "parent": {
+      "duration_us": 109.5885,
+      "round_medians_us": [
+        109.5885
+      ],
+      "pmu": {
+        "aiv_weight_us": 634.16,
+        "activity_time_us": {
+          "Vector": 367.551,
+          "Scalar": 117.727,
+          "MTE2": 523.98,
+          "MTE3": 298.801
+        },
+        "activity_pct": {
+          "Vector": 57.958717043017536,
+          "Scalar": 18.56424246247004,
+          "MTE2": 82.62583575122997,
+          "MTE3": 47.11760439005929
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    },
+    "candidate": {
+      "duration_us": 110.893,
+      "round_medians_us": [
+        110.893
+      ],
+      "pmu": {
+        "aiv_weight_us": 637.17,
+        "activity_time_us": {
+          "Vector": 326.61199999999997,
+          "Scalar": 119.028,
+          "MTE2": 555.246,
+          "MTE3": 276.161
+        },
+        "activity_pct": {
+          "Vector": 51.25978938116986,
+          "Scalar": 18.680728847874196,
+          "MTE2": 87.14252083431424,
+          "MTE3": 43.34180830861465
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    }
+  },
+  "model_t2va_recipe209_u1": {
+    "parent": {
+      "duration_us": 1883.987,
+      "round_medians_us": [
+        1883.987
+      ],
+      "pmu": {
+        "aiv_weight_us": 11301.26,
+        "activity_time_us": {
+          "Vector": 5487.67,
+          "Scalar": 1883.637,
+          "MTE2": 10190.76,
+          "MTE3": 7574.883
+        },
+        "activity_pct": {
+          "Vector": 48.55803689146166,
+          "Scalar": 16.667495482804572,
+          "MTE2": 90.173662051842,
+          "MTE3": 67.0268890371516
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    },
+    "candidate": {
+      "duration_us": 1896.158,
+      "round_medians_us": [
+        1896.158
+      ],
+      "pmu": {
+        "aiv_weight_us": 11389.54,
+        "activity_time_us": {
+          "Vector": 4854.013,
+          "Scalar": 1859.632,
+          "MTE2": 10645.127,
+          "MTE3": 6210.036
+        },
+        "activity_pct": {
+          "Vector": 42.618165439517306,
+          "Scalar": 16.327542640001266,
+          "MTE2": 93.46406439592818,
+          "MTE3": 54.52402818726656
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    }
+  },
+  "model_t2va_recipe209_u4_rank0": {
+    "parent": {
+      "duration_us": 479.019,
+      "round_medians_us": [
+        479.019
+      ],
+      "pmu": {
+        "aiv_weight_us": 2873.13,
+        "activity_time_us": {
+          "Vector": 1384.061,
+          "Scalar": 512.49,
+          "MTE2": 2588.951,
+          "MTE3": 1971.883
+        },
+        "activity_pct": {
+          "Vector": 48.172585298959675,
+          "Scalar": 17.837341157552913,
+          "MTE2": 90.10907964484726,
+          "MTE3": 68.6318753415265
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    },
+    "candidate": {
+      "duration_us": 482.6,
+      "round_medians_us": [
+        482.6
+      ],
+      "pmu": {
+        "aiv_weight_us": 2893.39,
+        "activity_time_us": {
+          "Vector": 1227.115,
+          "Scalar": 475.25,
+          "MTE2": 2683.022,
+          "MTE3": 1612.404
+        },
+        "activity_pct": {
+          "Vector": 42.410978126004444,
+          "Scalar": 16.425369549213897,
+          "MTE2": 92.72935898720878,
+          "MTE3": 55.727157417423854
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    }
+  },
+  "model_fl2va_first_step0_u4": {
+    "parent": {
+      "duration_us": 452.7495,
+      "round_medians_us": [
+        452.7495
+      ],
+      "pmu": {
+        "aiv_weight_us": 2714.66,
+        "activity_time_us": {
+          "Vector": 1314.312,
+          "Scalar": 455.925,
+          "MTE2": 2455.9610000000002,
+          "MTE3": 1837.796
+        },
+        "activity_pct": {
+          "Vector": 48.41534483139693,
+          "Scalar": 16.794920910905972,
+          "MTE2": 90.47029830623357,
+          "MTE3": 67.69893835692132
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    },
+    "candidate": {
+      "duration_us": 458.7205,
+      "round_medians_us": [
+        458.7205
+      ],
+      "pmu": {
+        "aiv_weight_us": 2749.75,
+        "activity_time_us": {
+          "Vector": 1173.16,
+          "Scalar": 442.00600000000003,
+          "MTE2": 2558.372,
+          "MTE3": 1502.1779999999999
+        },
+        "activity_pct": {
+          "Vector": 42.664242203836714,
+          "Scalar": 16.074406764251297,
+          "MTE2": 93.04016728793526,
+          "MTE3": 54.62962087462496
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    }
+  },
+  "model_fl2va_first_mid_u4": {
+    "parent": {
+      "duration_us": 453.7955,
+      "round_medians_us": [
+        453.7955
+      ],
+      "pmu": {
+        "aiv_weight_us": 2727.49,
+        "activity_time_us": {
+          "Vector": 1314.013,
+          "Scalar": 458.371,
+          "MTE2": 2470.036,
+          "MTE3": 1848.5030000000002
+        },
+        "activity_pct": {
+          "Vector": 48.17663859445864,
+          "Scalar": 16.80559782070695,
+          "MTE2": 90.56077199183133,
+          "MTE3": 67.77304408082158
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    },
+    "candidate": {
+      "duration_us": 459.2345,
+      "round_medians_us": [
+        459.2345
+      ],
+      "pmu": {
+        "aiv_weight_us": 2749.73,
+        "activity_time_us": {
+          "Vector": 1169.731,
+          "Scalar": 440.348,
+          "MTE2": 2557.573,
+          "MTE3": 1499.041
+        },
+        "activity_pct": {
+          "Vector": 42.539849367028765,
+          "Scalar": 16.01422685136359,
+          "MTE2": 93.01178661177643,
+          "MTE3": 54.51593429173046
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    }
+  },
+  "model_fl2va_firstlast124_u4": {
+    "parent": {
+      "duration_us": 307.161,
+      "round_medians_us": [
+        307.161
+      ],
+      "pmu": {
+        "aiv_weight_us": 1841.93,
+        "activity_time_us": {
+          "Vector": 894.7959999999999,
+          "Scalar": 315.772,
+          "MTE2": 1664.007,
+          "MTE3": 1213.521
+        },
+        "activity_pct": {
+          "Vector": 48.57926196978169,
+          "Scalar": 17.143539656773058,
+          "MTE2": 90.34040381556302,
+          "MTE3": 65.88312259423539
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    },
+    "candidate": {
+      "duration_us": 309.87,
+      "round_medians_us": [
+        309.87
+      ],
+      "pmu": {
+        "aiv_weight_us": 1859.92,
+        "activity_time_us": {
+          "Vector": 797.427,
+          "Scalar": 318.93899999999996,
+          "MTE2": 1723.047,
+          "MTE3": 1037.768
+        },
+        "activity_pct": {
+          "Vector": 42.87426340917889,
+          "Scalar": 17.147995612714524,
+          "MTE2": 92.6409200395716,
+          "MTE3": 55.79637833885328
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    }
+  },
+  "model_t2va_default_limit_u4_rank3": {
+    "parent": {
+      "duration_us": 819.0245,
+      "round_medians_us": [
+        819.0245
+      ],
+      "pmu": {
+        "aiv_weight_us": 4914.43,
+        "activity_time_us": {
+          "Vector": 2376.451,
+          "Scalar": 833.899,
+          "MTE2": 4437.865,
+          "MTE3": 3309.053
+        },
+        "activity_pct": {
+          "Vector": 48.356594762770044,
+          "Scalar": 16.968376800564865,
+          "MTE2": 90.30274111138016,
+          "MTE3": 67.33340387389788
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    },
+    "candidate": {
+      "duration_us": 826.0345,
+      "round_medians_us": [
+        826.0345
+      ],
+      "pmu": {
+        "aiv_weight_us": 4957.18,
+        "activity_time_us": {
+          "Vector": 2108.083,
+          "Scalar": 796.645,
+          "MTE2": 4613.615,
+          "MTE3": 2705.201
+        },
+        "activity_pct": {
+          "Vector": 42.52585139131522,
+          "Scalar": 16.070528001807478,
+          "MTE2": 93.06934587810004,
+          "MTE3": 54.571369205879144
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    }
+  },
+  "model_ref2va_img_audio_step0_u1": {
+    "parent": {
+      "duration_us": 326.75199999999995,
+      "round_medians_us": [
+        326.75199999999995
+      ],
+      "pmu": {
+        "aiv_weight_us": 1953.76,
+        "activity_time_us": {
+          "Vector": 937.207,
+          "Scalar": 336.224,
+          "MTE2": 1766.034,
+          "MTE3": 1293.238
+        },
+        "activity_pct": {
+          "Vector": 47.96940258783064,
+          "Scalar": 17.20907378593072,
+          "MTE2": 90.39155269838672,
+          "MTE3": 66.19226517074769
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    },
+    "candidate": {
+      "duration_us": 328.81550000000004,
+      "round_medians_us": [
+        328.81550000000004
+      ],
+      "pmu": {
+        "aiv_weight_us": 1971.27,
+        "activity_time_us": {
+          "Vector": 837.759,
+          "Scalar": 317.21500000000003,
+          "MTE2": 1829.893,
+          "MTE3": 1042.301
+        },
+        "activity_pct": {
+          "Vector": 42.498440091920436,
+          "Scalar": 16.09191029133503,
+          "MTE2": 92.82812603042709,
+          "MTE3": 52.87459353614675
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    }
+  },
+  "model_ref2va_img_audio_mid_u1": {
+    "parent": {
+      "duration_us": 325.5385,
+      "round_medians_us": [
+        325.5385
+      ],
+      "pmu": {
+        "aiv_weight_us": 1949.04,
+        "activity_time_us": {
+          "Vector": 936.28,
+          "Scalar": 347.647,
+          "MTE2": 1762.9550000000002,
+          "MTE3": 1305.278
+        },
+        "activity_pct": {
+          "Vector": 48.03800845544473,
+          "Scalar": 17.836832491893443,
+          "MTE2": 90.45247916923205,
+          "MTE3": 66.97030332881829
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    },
+    "candidate": {
+      "duration_us": 328.64300000000003,
+      "round_medians_us": [
+        328.64300000000003
+      ],
+      "pmu": {
+        "aiv_weight_us": 1980.34,
+        "activity_time_us": {
+          "Vector": 840.3050000000001,
+          "Scalar": 324.47,
+          "MTE2": 1839.782,
+          "MTE3": 1045.1860000000001
+        },
+        "activity_pct": {
+          "Vector": 42.432360099780844,
+          "Scalar": 16.384560227031724,
+          "MTE2": 92.90232990294595,
+          "MTE3": 52.778108809598365
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    }
+  },
+  "model_batch2_same_step_u4_rank0": {
+    "parent": {
+      "duration_us": 148.2305,
+      "round_medians_us": [
+        148.2305
+      ],
+      "pmu": {
+        "aiv_weight_us": 881.8299999999999,
+        "activity_time_us": {
+          "Vector": 456.081,
+          "Scalar": 171.383,
+          "MTE2": 770.703,
+          "MTE3": 519.216
+        },
+        "activity_pct": {
+          "Vector": 51.71983262079993,
+          "Scalar": 19.434925098941974,
+          "MTE2": 87.39813796309947,
+          "MTE3": 58.87937584341653
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    },
+    "candidate": {
+      "duration_us": 150.6855,
+      "round_medians_us": [
+        150.6855
+      ],
+      "pmu": {
+        "aiv_weight_us": 894.77,
+        "activity_time_us": {
+          "Vector": 408.01800000000003,
+          "Scalar": 158.096,
+          "MTE2": 803.984,
+          "MTE3": 439.856
+        },
+        "activity_pct": {
+          "Vector": 45.60032187042481,
+          "Scalar": 17.668898152597876,
+          "MTE2": 89.85370542150498,
+          "MTE3": 49.15855471238419
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    }
+  },
+  "model_batch2_mixed_step_u4_rank3": {
+    "parent": {
+      "duration_us": 153.0575,
+      "round_medians_us": [
+        153.0575
+      ],
+      "pmu": {
+        "aiv_weight_us": 894.34,
+        "activity_time_us": {
+          "Vector": 454.19399999999996,
+          "Scalar": 165.386,
+          "MTE2": 780.609,
+          "MTE3": 562.693
+        },
+        "activity_pct": {
+          "Vector": 50.785383634859215,
+          "Scalar": 18.49251962340944,
+          "MTE2": 87.28324798175191,
+          "MTE3": 62.91712324172014
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    },
+    "candidate": {
+      "duration_us": 154.65550000000002,
+      "round_medians_us": [
+        154.65550000000002
+      ],
+      "pmu": {
+        "aiv_weight_us": 904.0799999999999,
+        "activity_time_us": {
+          "Vector": 407.904,
+          "Scalar": 161.419,
+          "MTE2": 814.888,
+          "MTE3": 459.241
+        },
+        "activity_pct": {
+          "Vector": 45.11813113883728,
+          "Scalar": 17.854504026192377,
+          "MTE2": 90.13450137156005,
+          "MTE3": 50.796500309707106
+        },
+        "target_count": 6,
+        "kernel_records": 6
+      }
+    }
+  }
+}
