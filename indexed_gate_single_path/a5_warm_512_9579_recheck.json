@@ -1,0 +1,124 @@
+{
+  "case_id": "model_t2va_smoke_mid_u8_rank0",
+  "runtime": {
+    "device": "Ascend950PR_9579",
+    "torch": "2.7.1+cpu",
+    "torch_npu": "2.7.1.post11.dev20261022",
+    "triton": "3.6.0",
+    "physical_card": 2
+  },
+  "source_sha256": "de0e648a4367386006686cad54267b7f0c8737feadb1403ae2f2149904672732",
+  "rows": 512,
+  "hidden": 5376,
+  "conditions": 6,
+  "precision_passed": 2,
+  "cache": "warm",
+  "l20_historical_device_us": 9.6005,
+  "l20_status": "INTERFERENCE_UNVERIFIED",
+  "l20_over_a5": 0.7222222222222223,
+  "perf": {
+    "parent": {
+      "full_device_us": 11.6395,
+      "full_device_us_round_medians": [
+        11.788499999999999,
+        11.6395,
+        11.526
+      ],
+      "full_device_us_spread": 0.022552515142402963,
+      "full_device_us_limit": 0.03,
+      "fused_device_us": 11.6395,
+      "fused_device_us_round_medians": [
+        11.788499999999999,
+        11.6395,
+        11.526
+      ],
+      "fused_device_us_spread": 0.022552515142402963,
+      "fused_device_us_limit": 0.03,
+      "table_copy_us": 0.0,
+      "table_copy_us_round_medians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "device_span_us": 11.75,
+      "device_span_us_round_medians": [
+        11.75,
+        11.75,
+        11.5
+      ]
+    },
+    "candidate": {
+      "full_device_us": 13.293,
+      "full_device_us_round_medians": [
+        13.128,
+        13.293,
+        13.314
+      ],
+      "full_device_us_spread": 0.013992326788535316,
+      "full_device_us_limit": 0.03,
+      "fused_device_us": 13.293,
+      "fused_device_us_round_medians": [
+        13.128,
+        13.293,
+        13.314
+      ],
+      "fused_device_us_spread": 0.013992326788535316,
+      "fused_device_us_limit": 0.03,
+      "table_copy_us": 0.0,
+      "table_copy_us_round_medians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "device_span_us": 13.25,
+      "device_span_us_round_medians": [
+        13.125,
+        13.25,
+        13.25
+      ]
+    }
+  },
+  "pmu": {
+    "parent": {
+      "target_count": 6,
+      "aiv_weight_us": 71.35,
+      "activity_time_us": {
+        "Vector": 51.24,
+        "Scalar": 22.195,
+        "MTE2": 31.490000000000002,
+        "MTE3": 15.332
+      },
+      "activity_pct": {
+        "Vector": 71.81499649614577,
+        "Scalar": 31.107217939733708,
+        "MTE2": 44.134548002803086,
+        "MTE3": 21.488437281009112
+      }
+    },
+    "candidate": {
+      "target_count": 6,
+      "aiv_weight_us": 79.59,
+      "activity_time_us": {
+        "Vector": 47.604,
+        "Scalar": 20.365000000000002,
+        "MTE2": 54.025000000000006,
+        "MTE3": 14.521
+      },
+      "activity_pct": {
+        "Vector": 59.81153411232566,
+        "Scalar": 25.587385349918332,
+        "MTE2": 67.8791305440382,
+        "MTE3": 18.244754366126397
+      }
+    }
+  },
+  "copy_gbps": {
+    "before": 1452.5055136446938,
+    "after": 1452.3665117914798
+  },
+  "copy_drift_pct": 0.009569798662261212,
+  "timing_sha256": "a93e53b9807af64b6055061a356817d0561eee1dbe52b01a6a4bd9a7b275963e",
+  "pmu_sha256": "a3394a8f84d1f47d1f77617bf30e55389fdd68a5057add6976aad01d386fa2f7",
+  "geomean16_reference": 2.098637278272532,
+  "geomean15_reference": 2.253314538115858
+}
